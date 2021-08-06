@@ -1,0 +1,22 @@
+{
+  "name": "2021-08-05-cubes-and-colors",
+  "description": "3D scene with advanced materials and physically based shading using pex-renderer.",
+  "private": true,
+  "dependencies": {
+    "chromotome": "^1.19.1",
+    "fit-rect": "^1.0.3",
+    "geom-normals": "^1.0.1",
+    "geom-parse-obj": "^1.0.0",
+    "parse-hdr": "^1.0.0",
+    "pex-color": "^1.1.1",
+    "pex-context": "^2.10.4",
+    "pex-io": "^2.1.0",
+    "pex-math": "^3.0.0-4",
+    "pex-random": "^1.0.1",
+    "pex-renderer": "^3.1.0",
+    "primitive-cube": "^2.0.1",
+    "primitive-rounded-cube": "^1.0.2",
+    "primitive-sphere": "^3.0.0",
+    "primitive-torus": "^1.0.4"
+  }
+}

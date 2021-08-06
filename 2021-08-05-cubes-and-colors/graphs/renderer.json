@@ -1,0 +1,3480 @@
+{
+  "id": "a13d00e0-df9d-11e9-aa9a-5f576689df7f",
+  "version": "1.0.0-beta.2",
+  "name": "renderer",
+  "nodes": [
+    {
+      "id": "Z6LU_AYTj",
+      "name": "Context",
+      "x": -570,
+      "y": -870,
+      "templateName": "Context",
+      "params": [
+        {
+          "name": "resolution",
+          "value": "W x H - Inerit"
+        },
+        {
+          "name": "portrait",
+          "value": false
+        },
+        {
+          "name": "align",
+          "value": "center"
+        },
+        {
+          "name": "Auto clear",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "jovy0of6K",
+      "name": "Renderer",
+      "x": -570,
+      "y": -690,
+      "templateName": "Renderer",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "53Q4P8JDN",
+            "port": "out"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OXG8upCIx",
+      "name": "Sequence",
+      "x": -570,
+      "y": -630,
+      "templateName": "Sequence",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "jovy0of6K",
+            "port": "out"
+          }
+        }
+      ]
+    },
+    {
+      "id": "uk_pJeLk-",
+      "name": "Orbiter Component",
+      "x": -1486,
+      "y": -360,
+      "templateName": "Orbiter Component",
+      "params": [
+        {
+          "name": "position",
+          "value": [
+            12.64385072699853,
+            14.047928766410328,
+            12.31709406061356
+          ]
+        },
+        {
+          "name": "target",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "easing",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "IwFTuZRC8",
+      "name": "Entity",
+      "x": 345,
+      "y": -150,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "VMZV8T3qD",
+            "port": "out"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "Gnw84IQaH",
+            "port": "directional light out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "dG9pfCh8sl",
+            "port": "area light out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            3.08,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            -41.6,
+            -187.8,
+            -55.6
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Gnw84IQaH",
+      "name": "Directional Light Component",
+      "x": 360,
+      "y": -210,
+      "templateName": "Directional Light Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            0.9999999999999524,
+            1.000000000000017,
+            1.0000000000000127,
+            4.3
+          ]
+        },
+        {
+          "name": "intensity in",
+          "value": 4.3
+        },
+        {
+          "name": "cast shadows",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "cGnzZ_Qam",
+      "name": "Post Processing Component",
+      "x": -1470,
+      "y": -450,
+      "templateName": "Post Processing Component",
+      "params": [
+        {
+          "name": "fxaa",
+          "value": true
+        },
+        {
+          "name": "fog",
+          "value": false
+        },
+        {
+          "name": "fogColor",
+          "value": [
+            0.4666666666666667,
+            0.4666666666666667,
+            0.4666666666666667,
+            null
+          ]
+        },
+        {
+          "name": "fogStart",
+          "value": 4
+        },
+        {
+          "name": "fogDensity",
+          "value": 2.5
+        },
+        {
+          "name": "ssao",
+          "value": true
+        },
+        {
+          "name": "ssaoIntensity",
+          "value": 10
+        },
+        {
+          "name": "ssaoRadius",
+          "value": 5
+        },
+        {
+          "name": "ssaoBias",
+          "value": 0.01
+        },
+        {
+          "name": "ssaoBlurRadius",
+          "value": 2
+        },
+        {
+          "name": "ssaoBlurSharpness",
+          "value": 2
+        },
+        {
+          "name": "dof",
+          "value": false
+        },
+        {
+          "name": "dofFocusDistance",
+          "value": 4
+        },
+        {
+          "name": "bloom",
+          "value": true
+        },
+        {
+          "name": "bloomIntensity",
+          "value": 10
+        },
+        {
+          "name": "bloomThreshold",
+          "value": -1
+        },
+        {
+          "name": "bloomRadius",
+          "value": 0.4
+        }
+      ]
+    },
+    {
+      "id": "DXfCoiqFB",
+      "name": "Entity",
+      "x": -1530,
+      "y": -315,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "aFU9G-ym",
+            "port": "camera out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "cGnzZ_Qam",
+            "port": "post processing out"
+          }
+        },
+        {
+          "name": "component 3",
+          "source": {
+            "id": "uk_pJeLk-",
+            "port": "orbiter out"
+          }
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tz8LXp-PPZ",
+      "name": "Entity",
+      "x": 660,
+      "y": -675,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "component 1",
+          "source": {
+            "id": "wHjRTzN3o6",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 2",
+          "value": null
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h92-B855pI",
+      "name": "Entity",
+      "x": 990,
+      "y": -135,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "component 1",
+          "source": {
+            "id": "C5u-I7MuxZ",
+            "port": "area light out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "ltyxn7HGGk",
+            "port": "area light out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XEzHkL6yHc",
+      "name": "Entity",
+      "x": -1680,
+      "y": 345,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out2"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "pfPKaszp",
+            "port": "skybox out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "42fdljeF5J",
+            "port": "reflection probe out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ubZ5ck6TTD",
+      "name": "HDR Texture load",
+      "x": -1605,
+      "y": 90,
+      "templateName": "HDR Texture load",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/venice_sunset_2k.hdr"
+        }
+      ]
+    },
+    {
+      "id": "42fdljeF5J",
+      "name": "Reflection Probe Component",
+      "x": -1650,
+      "y": 300,
+      "templateName": "Reflection Probe Component",
+      "params": [
+        {
+          "name": "skybox in here",
+          "source": {
+            "id": "pfPKaszp",
+            "port": "connect to reflection probe"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hMG024vQnP",
+      "name": "Entity",
+      "x": 645,
+      "y": -840,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "component 1",
+          "value": null
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "qUaSh414F4",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jgJdQmNBxS",
+      "name": "Geometry Component",
+      "x": 690,
+      "y": -915,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "qUaSh414F4",
+      "name": "Material Component",
+      "x": 690,
+      "y": -885,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": false
+        },
+        {
+          "name": "receiveShadows",
+          "value": false
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": false
+        },
+        {
+          "name": "depthWrite",
+          "value": false
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "C5u-I7MuxZ",
+      "name": "Area Light  Component",
+      "x": 1005,
+      "y": -225,
+      "templateName": "Area Light  Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            0.5647058823529412,
+            0.2901960784313726,
+            1,
+            4.8
+          ]
+        },
+        {
+          "name": "intensity in",
+          "value": 4.8
+        },
+        {
+          "name": "cast shadows",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "xdGp7hFVtZ",
+      "name": "Material Component",
+      "x": 720,
+      "y": -555,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": false
+        },
+        {
+          "name": "receiveShadows",
+          "value": false
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": false
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "wHjRTzN3o6",
+      "name": "Material Component",
+      "x": 675,
+      "y": -765,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": false
+        },
+        {
+          "name": "receiveShadows",
+          "value": false
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": false
+        },
+        {
+          "name": "depthWrite",
+          "value": false
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "ltyxn7HGGk",
+      "name": "Light Helper Component",
+      "x": 1080,
+      "y": -195,
+      "templateName": "Light Helper Component",
+      "params": []
+    },
+    {
+      "id": "dG9pfCh8sl",
+      "name": "Light Helper Component",
+      "x": 420,
+      "y": -270,
+      "templateName": "Light Helper Component",
+      "params": []
+    },
+    {
+      "id": "BeOyF3JpeY",
+      "name": "Axis Helper Component",
+      "x": 75,
+      "y": -810,
+      "templateName": "Axis Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "j8NTe4E0OZ",
+      "name": "Camera Helper Component",
+      "x": 75,
+      "y": -900,
+      "templateName": "Camera Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yNyQPO4hBN",
+      "name": "Grid Helper Component",
+      "x": 105,
+      "y": -780,
+      "templateName": "Grid Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7Ypd9HBO_H",
+      "name": "Bounding Box Helper Component",
+      "x": 345,
+      "y": -900,
+      "templateName": "Bounding Box Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aFU9G-ym",
+      "name": "Camera Component",
+      "x": -1515,
+      "y": -406,
+      "templateName": "Camera Component",
+      "params": [
+        {
+          "name": "resize viewport to fit canvas",
+          "value": true
+        },
+        {
+          "name": "viewport",
+          "value": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "near",
+          "value": 0.1
+        },
+        {
+          "name": "far",
+          "value": 100
+        },
+        {
+          "name": "exposure",
+          "value": 1.2
+        },
+        {
+          "name": "fov",
+          "value": 0.7853981633974483
+        },
+        {
+          "name": "focalLength",
+          "value": 50
+        },
+        {
+          "name": "fStop",
+          "value": 5
+        },
+        {
+          "name": "sensorSize",
+          "value": [
+            36,
+            24
+          ]
+        },
+        {
+          "name": "sensorFit",
+          "value": "vertical"
+        }
+      ]
+    },
+    {
+      "id": "pfPKaszp",
+      "name": "Skybox Component",
+      "x": -1665,
+      "y": 255,
+      "templateName": "Skybox Component",
+      "params": [
+        {
+          "name": "sunPosition",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "blackgroundBlur",
+          "value": true
+        },
+        {
+          "name": "texture",
+          "source": {
+            "id": "ubZ5ck6TTD",
+            "port": "texture out"
+          }
+        },
+        {
+          "name": "background texture",
+          "source": {
+            "id": "zn68womt1",
+            "port": "texture"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ShJLSPogg",
+      "name": "Geometry Component",
+      "x": 690,
+      "y": -720,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "Zjt8p6IiZ",
+      "name": "Geometry Component",
+      "x": 660,
+      "y": -465,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "q2NoqL1gX",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2NoqL1gX",
+      "name": "Cube",
+      "x": 660,
+      "y": -510,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 5
+        },
+        {
+          "name": "sy",
+          "value": 0.5
+        },
+        {
+          "name": "sz",
+          "value": 5
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "53Q4P8JDN",
+      "name": "Debug",
+      "x": -570,
+      "y": -750,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "GY8rWNJFe",
+            "port": "out"
+          }
+        },
+        {
+          "name": "debug"
+        }
+      ]
+    },
+    {
+      "id": "hSLoApVQu0",
+      "name": "Entity",
+      "x": 660,
+      "y": -405,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "component 1",
+          "source": {
+            "id": "Zjt8p6IiZ",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "xdGp7hFVtZ",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zn68womt1",
+      "name": "Generate Solid Background",
+      "x": -1575,
+      "y": 135,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "color",
+          "value": [
+            0.9607843137254902,
+            0.8313725490196079,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hBhGdchFi",
+      "name": "Material Component",
+      "x": -1395,
+      "y": 300,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0.20392156862745098,
+            0.596078431372549,
+            0.8588235294117647,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "6A_iQYjAuG",
+      "name": "Geometry Component",
+      "x": -1410,
+      "y": 255,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "4MqYnQli3L",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4MqYnQli3L",
+      "name": "Cube",
+      "x": -1410,
+      "y": 210,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 5
+        },
+        {
+          "name": "sy",
+          "value": 0.2
+        },
+        {
+          "name": "sz",
+          "value": 5
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "ur8GNdNErS",
+      "name": "Entity",
+      "x": -1425,
+      "y": 345,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "6A_iQYjAuG",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "hBhGdchFi",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            -0.11,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6bMglKgYB",
+      "name": "Simple Material Component",
+      "x": 120,
+      "y": 300,
+      "templateName": "Simple Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0.9450980392156862,
+            0.7686274509803922,
+            0.058823529411764705,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 1
+        },
+        {
+          "name": "roughness",
+          "value": 0.32
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "8yC-BaLcPm",
+      "name": "Geometry Component",
+      "x": 105,
+      "y": 255,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "GgAeRLcn-E",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GgAeRLcn-E",
+      "name": "Sphere",
+      "x": 120,
+      "y": 195,
+      "templateName": "Sphere",
+      "params": [
+        {
+          "name": "r",
+          "value": 0.5
+        },
+        {
+          "name": "segments",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "id": "o3vGfyXzb0",
+      "name": "Entity",
+      "x": 90,
+      "y": 345,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "8yC-BaLcPm",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "6bMglKgYB",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0.5,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XKL_lteLw",
+      "name": "Material Component",
+      "x": 510,
+      "y": 300,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0.1803921568627451,
+            0.8,
+            0.44313725490196076,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.45
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "9CyTJtipji",
+      "name": "Geometry Component",
+      "x": 495,
+      "y": 255,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "0_Ma733NFb",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0_Ma733NFb",
+      "name": "Torus",
+      "x": 495,
+      "y": 210,
+      "templateName": "Torus",
+      "params": [
+        {
+          "name": "R",
+          "value": 0.5
+        },
+        {
+          "name": "r",
+          "value": 0.25
+        },
+        {
+          "name": "majorSegments",
+          "value": 32
+        },
+        {
+          "name": "minorSegments",
+          "value": 64
+        }
+      ]
+    },
+    {
+      "id": "NkSN6hLteY",
+      "name": "Entity",
+      "x": 480,
+      "y": 345,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "9CyTJtipji",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "XKL_lteLw",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            1.44,
+            0.86,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            -29.28,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "y6qUDqTqG",
+      "name": "Material Component",
+      "x": -900,
+      "y": 300,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "source": {
+            "id": "L9sjlq4hx",
+            "port": "texture"
+          }
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "0FVr9x34VN",
+      "name": "Geometry Component",
+      "x": -915,
+      "y": 255,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "sy2cWwUJYA",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sy2cWwUJYA",
+      "name": "Cube",
+      "x": -915,
+      "y": 210,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 1
+        },
+        {
+          "name": "sy",
+          "value": 1
+        },
+        {
+          "name": "sz",
+          "value": 1
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sSNmxgPHn5",
+      "name": "Entity",
+      "x": -930,
+      "y": 345,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "0FVr9x34VN",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "y6qUDqTqG",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            -1.22,
+            0.5,
+            0.96
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rCLUVUYt8",
+      "name": "Entity",
+      "x": 60,
+      "y": -720,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out3"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "BeOyF3JpeY",
+            "port": "axis helper out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "yNyQPO4hBN",
+            "port": "grid helper out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L9sjlq4hx",
+      "name": "Texture",
+      "x": -795,
+      "y": 135,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/plastic-glow_emissive.png"
+        },
+        {
+          "name": "flipY",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "Sf2JxWel-",
+      "name": "Texture Repeating",
+      "x": -225,
+      "y": 60,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/PaintedMetal04_nrm.jpg"
+        },
+        {
+          "name": "flipY",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "XbKdV_94-",
+      "name": "Texture Repeating",
+      "x": -195,
+      "y": 165,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/PaintedMetal04_met.jpg"
+        },
+        {
+          "name": "flipY",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "M5v4TTryZ",
+      "name": "Material Component",
+      "x": -405,
+      "y": 300,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "source": {
+            "id": "EiIJ9Sivw",
+            "port": "texture"
+          }
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 1
+        },
+        {
+          "name": "metallicMap",
+          "source": {
+            "id": "XbKdV_94-",
+            "port": "texture"
+          }
+        },
+        {
+          "name": "roughness",
+          "value": 1
+        },
+        {
+          "name": "roughnessMap",
+          "source": {
+            "id": "M1LwtBzIi",
+            "port": "texture"
+          }
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "source": {
+            "id": "Sf2JxWel-",
+            "port": "texture"
+          }
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "YP-5veoe0j",
+      "name": "Geometry Component",
+      "x": -420,
+      "y": 255,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "lzI5IdoFl-",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lzI5IdoFl-",
+      "name": "Rounded Cube",
+      "x": -420,
+      "y": 210,
+      "templateName": "Rounded Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 0.5
+        },
+        {
+          "name": "sy",
+          "value": 1
+        },
+        {
+          "name": "sz",
+          "value": 1
+        },
+        {
+          "name": "nx",
+          "value": 20
+        },
+        {
+          "name": "ny",
+          "value": 20
+        },
+        {
+          "name": "nz",
+          "value": 20
+        },
+        {
+          "name": "r",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "mHqWmdwUfj",
+      "name": "Entity",
+      "x": -435,
+      "y": 345,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "YP-5veoe0j",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "M5v4TTryZ",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0.78,
+            0.5,
+            1.28
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EiIJ9Sivw",
+      "name": "Texture Repeating",
+      "x": -300,
+      "y": 0,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/PaintedMetal04_col.jpg"
+        },
+        {
+          "name": "flipY",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "M1LwtBzIi",
+      "name": "Texture Repeating",
+      "x": -120,
+      "y": 210,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/PaintedMetal04_rgh.jpg"
+        },
+        {
+          "name": "flipY",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "0_viSh8bK",
+      "name": "Load OBJ",
+      "x": 1020,
+      "y": 180,
+      "templateName": "Load OBJ",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/blob.obj"
+        }
+      ]
+    },
+    {
+      "id": "vf0rtsv97",
+      "name": "Material Component",
+      "x": 1035,
+      "y": 315,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 1
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.1
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "I3p3TemCF8",
+      "name": "Geometry Component",
+      "x": 1020,
+      "y": 270,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "0_viSh8bK",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "WFB4Z6VQux",
+      "name": "Entity",
+      "x": 1005,
+      "y": 360,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "I3p3TemCF8",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "vf0rtsv97",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            -1.22,
+            1.24,
+            -1.16
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            -29.28,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "_pgbLNIJg",
+      "name": "Entity",
+      "x": 720,
+      "y": -150,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "VMZV8T3qD",
+            "port": "out2"
+          }
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "I0UQ3rINce",
+            "port": "point light out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "mXtMc7zss7",
+            "port": "area light out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            -0.4,
+            0.58,
+            1.08
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            -41.6,
+            -187.8,
+            -55.6
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I0UQ3rINce",
+      "name": "Point Light Component",
+      "x": 735,
+      "y": -210,
+      "templateName": "Point Light Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            0.6846776760110809,
+            0.11695141394059738,
+            0.12231470304823175,
+            10
+          ]
+        },
+        {
+          "name": "intensity in",
+          "value": 10
+        },
+        {
+          "name": "cast shadows",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "mXtMc7zss7",
+      "name": "Light Helper Component",
+      "x": 795,
+      "y": -270,
+      "templateName": "Light Helper Component",
+      "params": []
+    },
+    {
+      "id": "GY8rWNJFe",
+      "name": "FPS Counter",
+      "x": -570,
+      "y": -810,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "Z6LU_AYTj",
+            "port": "out"
+          }
+        },
+        {
+          "name": "t",
+          "value": 0
+        },
+        {
+          "name": "enabled",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "VMZV8T3qD",
+      "name": "Sequence",
+      "x": 60,
+      "y": -480,
+      "templateName": "Sequence",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OXG8upCIx",
+            "port": "out5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Jr8mP3tMQ",
+      "name": "Grid Helper Component",
+      "x": -1275,
+      "y": 165,
+      "templateName": "Grid Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "6zoL95jJ-e",
+      "x": -1530,
+      "y": -255,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.821709667542991,
+        0.3026021866012773,
+        0.44062769351636777,
+        0.2
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Camera\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "Jr2KykKFas",
+      "x": 645,
+      "y": -645,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.769753459528877,
+        0.16190700991011994,
+        0.9716380982544389,
+        0.2
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Floor Cube Mesh \n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "AornLLu5QW",
+      "x": 345,
+      "y": -90,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.879798395287331,
+        0.5138323263979662,
+        0.6945748091562503,
+        0.2
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Lights",
+      "collapseFlags": {}
+    },
+    {
+      "id": "X0JAy0OBR",
+      "x": 840,
+      "y": -675,
+      "width": 180,
+      "height": 50,
+      "fontSize": 10,
+      "backgroundColor": [
+        0.515876558847476,
+        0.4313357557326448,
+        2.7926133627786953e-14,
+        1
+      ],
+      "textColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "text": "We generate new geometry component on every set",
+      "collapseFlags": {
+        "backgroundColor": false
+      }
+    },
+    {
+      "id": "n5jYmF1Nzt",
+      "x": -1680,
+      "y": 405,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.28603762524709686,
+        0.2860376252471099,
+        0.28603762524710974,
+        0.2
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Reflection probe\n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "XvOULSC5qC",
+      "x": -1425,
+      "y": 405,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.769753459528877,
+        0.16190700991011994,
+        0.9716380982544389,
+        0.2
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Floor Cube Mesh \n",
+      "collapseFlags": {}
+    },
+    {
+      "id": "F72mV2Xpo",
+      "x": -1410,
+      "y": -1110,
+      "width": 600,
+      "height": 100,
+      "fontSize": 48,
+      "backgroundColor": [
+        0.1607843137254902,
+        0.1607843137254902,
+        0.1607843137254902,
+        1
+      ],
+      "textColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "text": "Renderer",
+      "collapseFlags": {
+        "backgroundColor": false
+      }
+    },
+    {
+      "id": "K5Mr3JEAV",
+      "x": -780,
+      "y": -1110,
+      "width": 642,
+      "height": 150,
+      "fontSize": 36,
+      "backgroundColor": [
+        0.16419083846144028,
+        0.16419083846145374,
+        0.16419083846145277,
+        1
+      ],
+      "textColor": [
+        0.9999999999999524,
+        1.000000000000017,
+        1.0000000000000127,
+        1
+      ],
+      "text": "This example shows how to build a 3D scene using pex-render library.",
+      "collapseFlags": {
+        "backgroundColor": false
+      }
+    },
+    {
+      "id": "eRzruebd5",
+      "x": -105,
+      "y": -1110,
+      "width": 1076,
+      "height": 150,
+      "fontSize": 36,
+      "backgroundColor": [
+        0.16419083846144028,
+        0.16419083846145374,
+        0.16419083846145277,
+        1
+      ],
+      "textColor": [
+        0.9999999999999524,
+        1.000000000000017,
+        1.0000000000000127,
+        1
+      ],
+      "text": "See http://github.com/pex-gl/pex-renderer for full documentation.",
+      "collapseFlags": {
+        "backgroundColor": false
+      }
+    },
+    {
+      "id": "dcLbP1xMN",
+      "x": -930,
+      "y": 405,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.1450980392156863,
+        0.18823529411764706,
+        0.3686274509803922,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Emissive Geometry",
+      "collapseFlags": {}
+    },
+    {
+      "id": "AGJk84PCj",
+      "x": -435,
+      "y": 405,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.6980392156862745,
+        0.1568627450980392,
+        0.1607843137254902,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "PBR Geometry",
+      "collapseFlags": {}
+    },
+    {
+      "id": "yjoaEY865",
+      "x": 90,
+      "y": 405,
+      "width": 200,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.8431372549019608,
+        0.6941176470588235,
+        0.10980392156862745,
+        1
+      ],
+      "textColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "text": "PBR Metallic Geometry",
+      "collapseFlags": {}
+    },
+    {
+      "id": "t43A3DtCO",
+      "x": 480,
+      "y": 405,
+      "width": 200,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.23529411764705882,
+        0.7411764705882353,
+        0.5098039215686274,
+        1
+      ],
+      "textColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "text": "PBR Metallic Geometry",
+      "collapseFlags": {}
+    },
+    {
+      "id": "C8rTPFW3R",
+      "x": 1005,
+      "y": 405,
+      "width": 200,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.6509803921568628,
+        0.7450980392156863,
+        0.8274509803921568,
+        1
+      ],
+      "textColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "text": "OBJ Geometry",
+      "collapseFlags": {}
+    },
+    {
+      "id": "Y_6lq9oj6",
+      "x": 60,
+      "y": -660,
+      "width": 180,
+      "height": 50,
+      "fontSize": 16,
+      "backgroundColor": [
+        0.879798395287331,
+        0.5138323263979662,
+        0.6945748091562503,
+        0.2
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "Helpers",
+      "collapseFlags": {}
+    }
+  ]
+}

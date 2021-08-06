@@ -1,0 +1,2720 @@
+{
+  "id": "4703c7d0-f6ac-11eb-b3d0-254924ea568f",
+  "version": "1.0.0-beta.2",
+  "name": "render-cubes-04",
+  "nodes": [
+    {
+      "id": "5NE81LAtj",
+      "name": "Context",
+      "x": -655.9998971485074,
+      "y": 558.6249124155265,
+      "templateName": "Context",
+      "params": [
+        {
+          "name": "resolution",
+          "public": true,
+          "value": "W x 1.5 x H x 1.5 - Half Retina"
+        },
+        {
+          "name": "portrait",
+          "value": false
+        },
+        {
+          "name": "align",
+          "value": "center"
+        },
+        {
+          "name": "Auto clear",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "_u14QzmfZm",
+      "name": "Renderer",
+      "x": -654.9998971485074,
+      "y": 675.6249124155265,
+      "templateName": "Renderer",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "dv1z108k7V",
+            "port": "out"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CKc2ArgVUg",
+      "name": "Camera Component",
+      "x": -2008.9998971485074,
+      "y": 1160.6249124155265,
+      "templateName": "Camera Component",
+      "params": [
+        {
+          "name": "resize viewport to fit canvas",
+          "value": true
+        },
+        {
+          "name": "viewport",
+          "value": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "projection",
+          "value": "orthographic"
+        },
+        {
+          "name": "near",
+          "value": -100
+        },
+        {
+          "name": "far",
+          "value": 100
+        },
+        {
+          "name": "exposure",
+          "value": 1
+        },
+        {
+          "name": "fov",
+          "value": 0.7853981633974483
+        },
+        {
+          "name": "focalLength",
+          "value": 50
+        },
+        {
+          "name": "fStop",
+          "value": 1.4
+        },
+        {
+          "name": "sensorSize",
+          "value": [
+            36,
+            24
+          ]
+        },
+        {
+          "name": "sensorFit",
+          "value": "vertical"
+        }
+      ]
+    },
+    {
+      "id": "x-tzcO-dpn",
+      "name": "Entity",
+      "x": -2018.9998971485074,
+      "y": 1375.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "jgTm0hSfxXW",
+            "port": "out"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "3FQdNml6HIB",
+            "port": "camera out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "jmGWEKi33l",
+            "port": "orbiter out"
+          }
+        },
+        {
+          "name": "component 3",
+          "source": {
+            "id": "gEcAQ_3ccYN",
+            "port": "post processing out"
+          }
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L0jd5OR1Ih",
+      "name": "Entity",
+      "x": -1330.9998971485074,
+      "y": 1385.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "jgTm0hSfxXW",
+            "port": "out2"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "hBPDV_MnJS",
+            "port": "directional light out"
+          }
+        },
+        {
+          "name": "component 2",
+          "value": null
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            2.26,
+            2.34,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            40,
+            -19.4,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dv1z108k7V",
+      "name": "Debug",
+      "x": -655.9998971485074,
+      "y": 608.6249124155265,
+      "templateName": "Debug",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "5NE81LAtj",
+            "port": "out"
+          }
+        },
+        {
+          "name": "debug"
+        }
+      ]
+    },
+    {
+      "id": "jmGWEKi33l",
+      "name": "Orbiter Component",
+      "x": -1963.9998971485074,
+      "y": 1247.6249124155265,
+      "templateName": "Orbiter Component",
+      "params": [
+        {
+          "name": "position",
+          "value": [
+            58.32425225720517,
+            18.991352942064097,
+            -22.289338065592496
+          ]
+        },
+        {
+          "name": "target",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "easing",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "hBPDV_MnJS",
+      "name": "Directional Light Component",
+      "x": -1288.9998971485074,
+      "y": 1274.6249124155265,
+      "templateName": "Directional Light Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            2.7
+          ]
+        },
+        {
+          "name": "intensity in",
+          "value": 2.7
+        },
+        {
+          "name": "cast shadows",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ut0zz2sbQh",
+      "name": "Light Helper Component",
+      "x": -1263.9998971485074,
+      "y": 1316.6249124155265,
+      "templateName": "Light Helper Component",
+      "params": []
+    },
+    {
+      "id": "v5NHC0oK03",
+      "name": "Axis Helper Component",
+      "x": -1033.9998971485074,
+      "y": 1273.6249124155265,
+      "templateName": "Axis Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a2Evk9tdss",
+      "name": "Grid Helper Component",
+      "x": -1005.9998971485074,
+      "y": 1304.6249124155265,
+      "templateName": "Grid Helper Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yHgb64PLwy",
+      "name": "Entity",
+      "x": -1052.9998971485074,
+      "y": 1399.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "bRrz0xp87ji",
+            "port": "out"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "v5NHC0oK03",
+            "port": "axis helper out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "a2Evk9tdss",
+            "port": "grid helper out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DAED6Hwk5Y",
+      "name": "Entity",
+      "x": -652.9998971485074,
+      "y": 1501.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OiNWBFTuAj1",
+            "port": "out"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "Pcl57XHlOO",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "HeaOEP0-yU",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            -0.06,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Pcl57XHlOO",
+      "name": "Geometry Component",
+      "x": -635.9998971485074,
+      "y": 1348.6249124155265,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "2FkqooHpTD",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2FkqooHpTD",
+      "name": "Cube",
+      "x": -636.9998971485074,
+      "y": 1303.6249124155265,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 5
+        },
+        {
+          "name": "sy",
+          "value": 0.1
+        },
+        {
+          "name": "sz",
+          "value": 5
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "HeaOEP0-yU",
+      "name": "Material Component",
+      "x": -615.9998971485074,
+      "y": 1392.6249124155265,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "jUpGhd2FiPF",
+      "name": "Reflection Probe Component",
+      "x": -1610.9998971485074,
+      "y": 1346.6249124155265,
+      "templateName": "Reflection Probe Component",
+      "params": [
+        {
+          "name": "skybox in here",
+          "source": {
+            "id": "LBCIk0wPGY8",
+            "port": "connect to reflection probe"
+          }
+        }
+      ]
+    },
+    {
+      "id": "LBCIk0wPGY8",
+      "name": "Skybox Component",
+      "x": -1629.9998971485074,
+      "y": 1290.6249124155265,
+      "templateName": "Skybox Component",
+      "params": [
+        {
+          "name": "sunPosition",
+          "value": [
+            1,
+            5.16,
+            1
+          ]
+        },
+        {
+          "name": "blackgroundBlur",
+          "value": true
+        },
+        {
+          "name": "texture",
+          "source": {
+            "id": "hB1MlI-ERB2",
+            "port": "texture out"
+          }
+        },
+        {
+          "name": "background texture",
+          "source": {
+            "id": "8CoNPYvtKqB",
+            "port": "texture"
+          }
+        }
+      ]
+    },
+    {
+      "id": "--VLCnzUVcV",
+      "name": "Entity",
+      "x": -1648.9998971485074,
+      "y": 1397.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "jgTm0hSfxXW",
+            "port": "out3"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "LBCIk0wPGY8",
+            "port": "skybox out"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "jUpGhd2FiPF",
+            "port": "reflection probe out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gEcAQ_3ccYN",
+      "name": "Post Processing Component",
+      "x": -1955.9998971485074,
+      "y": 1283.6249124155265,
+      "templateName": "Post Processing Component",
+      "params": [
+        {
+          "name": "fxaa",
+          "value": true
+        },
+        {
+          "name": "fog",
+          "value": false
+        },
+        {
+          "name": "fogColor",
+          "value": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "name": "fogStart",
+          "value": 5
+        },
+        {
+          "name": "fogDensity",
+          "value": 0.15
+        },
+        {
+          "name": "ssao",
+          "value": true
+        },
+        {
+          "name": "ssaoIntensity",
+          "public": true,
+          "value": 15
+        },
+        {
+          "name": "ssaoRadius",
+          "public": true,
+          "value": 30
+        },
+        {
+          "name": "ssaoBias",
+          "value": 0.01
+        },
+        {
+          "name": "ssaoBlurRadius",
+          "value": 1
+        },
+        {
+          "name": "ssaoBlurSharpness",
+          "value": 14.6
+        },
+        {
+          "name": "dof",
+          "value": false
+        },
+        {
+          "name": "dofFocusDistance",
+          "value": 10
+        },
+        {
+          "name": "bloom",
+          "value": false
+        },
+        {
+          "name": "bloomIntensity",
+          "value": 5
+        },
+        {
+          "name": "bloomThreshold",
+          "value": -1
+        },
+        {
+          "name": "bloomRadius",
+          "value": 0.4
+        }
+      ]
+    },
+    {
+      "id": "8CoNPYvtKqB",
+      "name": "Generate Solid Background",
+      "x": -1607.9998971485074,
+      "y": 1174.6249124155265,
+      "templateName": "Generate Solid Background",
+      "params": [
+        {
+          "name": "color",
+          "value": [
+            0.5948760368313378,
+            0.680037433084161,
+            0.7749751791478121,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jgTm0hSfxXW",
+      "name": "Sequence",
+      "x": -1572.9998971485074,
+      "y": 967.6249124155265,
+      "templateName": "Sequence",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "_u14QzmfZm",
+            "port": "out"
+          }
+        }
+      ]
+    },
+    {
+      "id": "G6XOwRDwQ7S",
+      "name": "Sequence",
+      "x": -436.99989714850744,
+      "y": 1099.6249124155265,
+      "templateName": "Sequence",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "_u14QzmfZm",
+            "port": "out"
+          }
+        }
+      ]
+    },
+    {
+      "id": "OiNWBFTuAj1",
+      "name": "Entity",
+      "x": -440.99989714850744,
+      "y": 1177.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "G6XOwRDwQ7S",
+            "port": "out"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "value": null
+        },
+        {
+          "name": "component 2",
+          "value": null
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "-1eEj3i-_5N",
+      "name": "Entity",
+      "x": -1344.9998971485074,
+      "y": 1571.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "XW93IpsO3XI",
+            "port": "directional light out"
+          }
+        },
+        {
+          "name": "component 2",
+          "value": null
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            -2.74,
+            0.74,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            63.94,
+            46.8,
+            -16.6
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XW93IpsO3XI",
+      "name": "Directional Light Component",
+      "x": -1312.9998971485074,
+      "y": 1446.6249124155265,
+      "templateName": "Directional Light Component",
+      "params": [
+        {
+          "name": "color in",
+          "value": [
+            1,
+            1,
+            1,
+            10
+          ]
+        },
+        {
+          "name": "intensity in",
+          "value": 10
+        },
+        {
+          "name": "cast shadows",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "OSIBL4VgaUa",
+      "name": "Light Helper Component",
+      "x": -1277.9998971485074,
+      "y": 1502.6249124155265,
+      "templateName": "Light Helper Component",
+      "params": []
+    },
+    {
+      "id": "bRrz0xp87ji",
+      "name": "utils.Toggle",
+      "x": -1049.9998971485074,
+      "y": 1217.6249124155265,
+      "templateName": "utils.Toggle",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "jgTm0hSfxXW",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "enabled",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "NBN_HC3ZpRE",
+      "name": "Entity",
+      "x": -32.99989714850744,
+      "y": 1583.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "G6XOwRDwQ7S",
+            "port": "out2"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "J6hZKb8ZVjE",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "F7Rhc0o-sJC",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "J6hZKb8ZVjE",
+      "name": "Geometry Component",
+      "x": -25.999897148507443,
+      "y": 1446.6249124155265,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "3mL9Q6KIC4y",
+            "port": "geom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "F7Rhc0o-sJC",
+      "name": "Material Component",
+      "x": -0.9998971485074435,
+      "y": 1503.6249124155265,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0.9999999999999524,
+            1.000000000000017,
+            1.0000000000000127,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 0
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "cyUXBWK7uNW",
+      "name": "Cube",
+      "x": 86.00010285149256,
+      "y": 1157.6249124155265,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 1
+        },
+        {
+          "name": "sy",
+          "value": 1
+        },
+        {
+          "name": "sz",
+          "value": 1
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Ehz9K5PNCJn",
+      "name": "Instanced Geom",
+      "x": 423.00010285149256,
+      "y": 1238.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "geom"
+        },
+        {
+          "name": "count",
+          "value": 50
+        },
+        {
+          "name": "seed",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "3FQdNml6HIB",
+      "name": "Camera Component",
+      "x": -2025.9998971485074,
+      "y": 1119.6249124155265,
+      "templateName": "Camera Component",
+      "params": [
+        {
+          "name": "resize viewport to fit canvas",
+          "value": true
+        },
+        {
+          "name": "viewport",
+          "value": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "projection",
+          "value": "perspective"
+        },
+        {
+          "name": "near",
+          "value": 0.1
+        },
+        {
+          "name": "far",
+          "value": 1000
+        },
+        {
+          "name": "exposure",
+          "value": 2.05
+        },
+        {
+          "name": "fov",
+          "value": 0.7853981633974483
+        },
+        {
+          "name": "focalLength",
+          "value": 50
+        },
+        {
+          "name": "fStop",
+          "value": 1.4
+        },
+        {
+          "name": "sensorSize",
+          "value": [
+            36,
+            24
+          ]
+        },
+        {
+          "name": "sensorFit",
+          "value": "vertical"
+        }
+      ]
+    },
+    {
+      "id": "3mL9Q6KIC4y",
+      "name": "blender.Point Instance",
+      "x": -39.99989714850744,
+      "y": 1341.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "jYNIYyc5JTj",
+            "port": "geom"
+          }
+        },
+        {
+          "name": "object",
+          "source": {
+            "id": "cyUXBWK7uNW",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Oc8x3fj1yPq",
+      "name": "Cube",
+      "x": 290.00010285149256,
+      "y": 1068.6249124155265,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 3
+        },
+        {
+          "name": "sy",
+          "value": 3
+        },
+        {
+          "name": "sz",
+          "value": 3
+        },
+        {
+          "name": "nx",
+          "value": 10
+        },
+        {
+          "name": "ny",
+          "value": 10
+        },
+        {
+          "name": "nz",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "tYdeybNi1iu",
+      "name": "Algo 01",
+      "x": -173.99989714850744,
+      "y": 955.6249124155265,
+      "templateName": "Custom",
+      "params": []
+    },
+    {
+      "id": "jvAXGVpmwes",
+      "name": "Algo 02",
+      "x": -152.99989714850744,
+      "y": 998.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "2A9yXT-uDiC",
+      "name": "Algo 03",
+      "x": -120.99989714850744,
+      "y": 1041.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "4XQBjLZ4F4Q",
+      "name": "Algo 04",
+      "x": -75.99989714850744,
+      "y": 1078.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "4FPVIEarnzV",
+      "name": "Algo 05",
+      "x": -106.99989714850744,
+      "y": 1126.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "4ENeNAGeQgs",
+      "name": "Entity",
+      "x": 698.0001028514926,
+      "y": 1555.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "G6XOwRDwQ7S",
+            "port": "out4"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "cEzOXtIy2i2",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "B_gCLmF4JYM",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cEzOXtIy2i2",
+      "name": "Geometry Component",
+      "x": 705.0001028514926,
+      "y": 1418.6249124155265,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "v7oIe_U47l0",
+            "port": "geom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "B_gCLmF4JYM",
+      "name": "Material Component",
+      "x": 753.0001028514926,
+      "y": 1468.6249124155265,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0.9999999999999524,
+            1.000000000000017,
+            1.0000000000000127,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.18
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 0.46
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "v7oIe_U47l0",
+      "name": "blender.Point Instance",
+      "x": 691.0001028514926,
+      "y": 1313.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "_dloS2eNuK4",
+            "port": "geom"
+          }
+        },
+        {
+          "name": "object",
+          "source": {
+            "id": "AKshGWf-_k_",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "YuxxznZoNu4",
+      "name": "Algo 05",
+      "x": 622.0001028514926,
+      "y": 1023.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "xTEmCgE_AGP",
+      "name": "Rounded Cube",
+      "x": 795.0001028514926,
+      "y": 1145.6249124155265,
+      "templateName": "Rounded Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 0.3
+        },
+        {
+          "name": "sy",
+          "value": 5
+        },
+        {
+          "name": "sz",
+          "value": 0.3
+        },
+        {
+          "name": "nx",
+          "value": 20
+        },
+        {
+          "name": "ny",
+          "value": 20
+        },
+        {
+          "name": "nz",
+          "value": 20
+        },
+        {
+          "name": "r",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "id": "hB1MlI-ERB2",
+      "name": "HDR Texture load",
+      "x": -1593.9998971485074,
+      "y": 1071.6249124155265,
+      "templateName": "HDR Texture load",
+      "params": [
+        {
+          "name": "url",
+          "value": "assets/venice_sunset_2k.hdr"
+        }
+      ]
+    },
+    {
+      "id": "AKshGWf-_k_",
+      "name": "Cube",
+      "x": 800.0001028514926,
+      "y": 1202.6249124155265,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 1
+        },
+        {
+          "name": "sy",
+          "value": 5
+        },
+        {
+          "name": "sz",
+          "value": 0.2
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "P5zUF0tLiGi",
+      "name": "Material Component",
+      "x": 785.0001028514926,
+      "y": 1502.6249124155265,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0.9362006188290878,
+            0.6464929039829119,
+            7.220810616104245e-12,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 1
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.35
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 0.46
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "_dloS2eNuK4",
+      "name": "Algo 06",
+      "x": 675.0001028514926,
+      "y": 1089.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "jYNIYyc5JTj",
+      "name": "Algo 06",
+      "x": -52.99989714850744,
+      "y": 1170.6249124155265,
+      "templateName": "Custom",
+      "params": [
+        {
+          "name": "freq",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "_FxYJSOJcAr",
+      "name": "Entity",
+      "x": -654.9998971485074,
+      "y": 1835.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OiNWBFTuAj1",
+            "port": "out"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "wzUJtF46YUK",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "NXdtY3j9uQB",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            6,
+            -0.06,
+            6
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wzUJtF46YUK",
+      "name": "Geometry Component",
+      "x": -637.9998971485074,
+      "y": 1682.6249124155265,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "jwaRkx5dLlT",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NXdtY3j9uQB",
+      "name": "Material Component",
+      "x": -617.9998971485074,
+      "y": 1726.6249124155265,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "fOsVkWBToBp",
+      "name": "Entity",
+      "x": -647.9998971485074,
+      "y": 2196.6249124155265,
+      "templateName": "Entity",
+      "params": [
+        {
+          "name": "in",
+          "source": {
+            "id": "OiNWBFTuAj1",
+            "port": "out"
+          }
+        },
+        {
+          "name": "tags",
+          "value": ""
+        },
+        {
+          "name": "component 1",
+          "source": {
+            "id": "jeb4m4uSA7T",
+            "port": "component"
+          }
+        },
+        {
+          "name": "component 2",
+          "source": {
+            "id": "Sf6CRNE9p9S",
+            "port": "material out"
+          }
+        },
+        {
+          "name": "component 3",
+          "value": null
+        },
+        {
+          "name": "component 4",
+          "value": null
+        },
+        {
+          "name": "component 5",
+          "value": null
+        },
+        {
+          "name": "position",
+          "value": [
+            -6,
+            -0.06,
+            -6
+          ]
+        },
+        {
+          "name": "rotation",
+          "value": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "scale",
+          "value": [
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jeb4m4uSA7T",
+      "name": "Geometry Component",
+      "x": -630.9998971485074,
+      "y": 2043.6249124155265,
+      "templateName": "Geometry Component",
+      "params": [
+        {
+          "name": "geometry",
+          "source": {
+            "id": "1Su-fMqi8KY",
+            "port": "geometry"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1Su-fMqi8KY",
+      "name": "Cube",
+      "x": -631.9998971485074,
+      "y": 1998.6249124155265,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 5
+        },
+        {
+          "name": "sy",
+          "value": 0.1
+        },
+        {
+          "name": "sz",
+          "value": 5
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "Sf6CRNE9p9S",
+      "name": "Material Component",
+      "x": -610.9998971485074,
+      "y": 2087.6249124155265,
+      "templateName": "Material Component",
+      "params": [
+        {
+          "name": "baseColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "baseColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveColor",
+          "value": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "emissiveColorMap",
+          "value": null
+        },
+        {
+          "name": "emissiveIntensity",
+          "value": 2
+        },
+        {
+          "name": "metallic",
+          "value": 0
+        },
+        {
+          "name": "metallicMap",
+          "value": null
+        },
+        {
+          "name": "roughness",
+          "value": 0.5
+        },
+        {
+          "name": "roughnessMap",
+          "value": null
+        },
+        {
+          "name": "metallicRoughnessMap",
+          "value": null
+        },
+        {
+          "name": "normalMap",
+          "value": null
+        },
+        {
+          "name": "normalScale",
+          "value": 2
+        },
+        {
+          "name": "displacementMap",
+          "value": null
+        },
+        {
+          "name": "displacement",
+          "value": 2
+        },
+        {
+          "name": "occlusionMap",
+          "value": null
+        },
+        {
+          "name": "reflectance",
+          "value": 0.5
+        },
+        {
+          "name": "clearCoat",
+          "value": null
+        },
+        {
+          "name": "clearCoatRoughness",
+          "value": 2
+        },
+        {
+          "name": "clearCoatNormalMap",
+          "value": null
+        },
+        {
+          "name": "clearCoatNormalMapScale",
+          "value": 2
+        },
+        {
+          "name": "alphaMap",
+          "value": null
+        },
+        {
+          "name": "alphaTest",
+          "value": 1
+        },
+        {
+          "name": "castShadows",
+          "value": true
+        },
+        {
+          "name": "receiveShadows",
+          "value": true
+        },
+        {
+          "name": "unlit",
+          "value": false
+        },
+        {
+          "name": "blend",
+          "value": false
+        },
+        {
+          "name": "depthTest",
+          "value": true
+        },
+        {
+          "name": "depthWrite",
+          "value": true
+        },
+        {
+          "name": "cullFace",
+          "value": true
+        },
+        {
+          "name": "pointSize",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "jwaRkx5dLlT",
+      "name": "Cube",
+      "x": -639.9998971485074,
+      "y": 1613.6249124155265,
+      "templateName": "Cube",
+      "params": [
+        {
+          "name": "sx",
+          "value": 5
+        },
+        {
+          "name": "sy",
+          "value": 0.1
+        },
+        {
+          "name": "sz",
+          "value": 5
+        },
+        {
+          "name": "nx",
+          "value": 1
+        },
+        {
+          "name": "ny",
+          "value": 1
+        },
+        {
+          "name": "nz",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "z5Bjh9tKahg",
+      "x": -650.9998971485074,
+      "y": 1547.6249124155265,
+      "width": 180,
+      "height": 50,
+      "fontSize": 28,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "FLOOR",
+      "collapseFlags": {}
+    },
+    {
+      "id": "a8MJX2GzpXf",
+      "x": -22.999897148507443,
+      "y": 1637.6249124155265,
+      "width": 180,
+      "height": 50,
+      "fontSize": 28,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "MESH",
+      "collapseFlags": {}
+    },
+    {
+      "id": "E7K_OduVtRb",
+      "x": 708.0001028514926,
+      "y": 1609.6249124155265,
+      "width": 180,
+      "height": 50,
+      "fontSize": 28,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "FACADE MESH",
+      "collapseFlags": {}
+    },
+    {
+      "id": "7ESdIjbQdX7",
+      "x": -652.9998971485074,
+      "y": 1881.6249124155265,
+      "width": 180,
+      "height": 50,
+      "fontSize": 28,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "FLOOR",
+      "collapseFlags": {}
+    },
+    {
+      "id": "uUamnBqa4Yg",
+      "x": -645.9998971485074,
+      "y": 2242.6249124155265,
+      "width": 180,
+      "height": 50,
+      "fontSize": 28,
+      "backgroundColor": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "textColor": [
+        0.7,
+        0.7,
+        0.7,
+        1
+      ],
+      "text": "FLOOR",
+      "collapseFlags": {}
+    }
+  ]
+}
